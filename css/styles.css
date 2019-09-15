@@ -1157,12 +1157,26 @@ input[type='checkbox'] {
 /*********************/
 .basic-3 {
 	padding-top: 6.875rem;
-	padding-bottom: 6.125rem;
+	/* padding-bottom: 6.125rem; */
 }
 
 .basic-3 h2 {
-	margin-bottom: 3rem;
+	margin-top: 1rem;
+	margin-bottom: 2rem;
 	text-align: center;
+}
+
+.basic-3 h4 {
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+	/* margin-top: 3rem; */
+	margin-left: 7rem;
+	margin-right: 7rem;
+	text-align: center;
+}
+
+.basic-3 .quote-text {
+	background: #f7fcfd;
 }
 
 .basic-3 .image-container {
