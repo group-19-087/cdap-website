@@ -39,21 +39,23 @@
   }
   
   .column100 {
-    width: 130px;
+    width: 180px;
     padding-left: 25px;
   }
   
   .column100.column1 {
-    width: 265px;
+    width: 335px;
     padding-left: 42px;
   }
   
   .row100.head th {
+    text-align: center;
     padding-top: 24px;
     padding-bottom: 20px;
   }
   
   .row100 td {
+    text-align: center;
     padding-top: 18px;
     padding-bottom: 14px;
   }
