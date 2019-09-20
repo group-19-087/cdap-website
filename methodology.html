@@ -224,7 +224,7 @@
 
                 <div class="text-container">
                     <h3>Slide Matching</h3>
-                    <p>This component is similar in functionality to the code matching component. Once the user selects
+                    <p>This component matches the lecture video with the lecture slides when the slides are available. Once the user selects
                         a slide from the slide deck displayed, the platform will automatically take the user to the
                         point of time in the lecture video, where the selected slide is being discussed.</p>
                     <p>Below are the steps that the platform mainly performs in order to provide the above discussed functionality. </p>
@@ -237,10 +237,9 @@
                     <p><span style="font-weight: bold">Slide Matching:</span> As a result of the slide comparison carried out in the previous step, the algorithm
                         chooses the first frame having less than 1% of difference with the compared slide and recognizes
                         it as the first occurrence of the selected slide in the lecture video.</p>
-                    <p>In the final step, after identifying the first frame with a difference less than 1% through the
-                        algorithm, the platform automatically navigates the lecture video to the point of time where that
-                        frame occurred with the aid of the naming convention used when extracting frames using ffmpeg in
-                        the first step. </p>
+                    <p>As the final step, the first frame with the least amount of differences is identified using the algorithm and the platform
+                        automatically navigates the lecture video to the point of time where that frame occurred with the aid of the naming convention
+                        used when extracting frames using ffmpeg in the first step. </p>
                 </div> <!-- end of text-container -->
             </div>
         </div> <!-- end of row -->
