@@ -24,6 +24,7 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,600,700,700i&amp;subset=latin-ext" rel="stylesheet">
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/fontawesome-all.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet" />
     <link href="css/swiper.css" rel="stylesheet">
 	<link href="css/magnific-popup.css" rel="stylesheet">
 	<link href="css/styles.css" rel="stylesheet">
@@ -158,24 +159,29 @@
     </header> <!-- end of header -->
     <!-- end of header -->
 
-    <!-- <div class="basic-3">
-        <div class="containter">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <h2>Tired of sitting through boring lectures to find what you want? </h2>
-                            <p style="font-size: 18pt">
-                                V-Tutor might be just what you're looking for! This video shows what V-Tutor is and how it will help you to enhance your learning experience
-                            </p>
-                        </div> 
-                    </div>
-                </div>
-            </div>
+    <!-- Question to viewer -->
+    <div class="full-height-display-table row" >
+        <div class="table-cell-center-vertical" >
+            <h2 data-aos="zoom-in" data-aos-duration="1000">
+                Tired of sitting through boring lectures to find what you want? 
+            </h2>
         </div>
-    </div> -->
+    </div>
+    <!-- end of Question to viewer -->
 
-    <!-- complete later -->
+    <!-- Answer to question -->
+    <div class="full-height-display-table row" >
+        <div class="table-cell-center-vertical" data-aos="flip-up" data-aos-duration="1000">
+            <h2>
+                V-Tutor might be just what you're looking for!  
+            </h2>
+            <h4>
+                This video shows what V-Tutor is and how it will help you to enhance your learning experience
+            </h4>
+        </div>
+    </div>
+    <!-- end of Answer to question -->
+
     <!-- Video -->
     <div id="video" class="basic-3">
         <div class="container">
@@ -190,7 +196,7 @@
                 </div> -->
             </div> <!-- end of row -->
             <div class="row">
-                <div class="col-lg-5">
+                <div class="col-lg-12" data-aos="fadeInUp">
                     <h2>Tired of sitting through boring lectures to find what you want? </h2>
                     <p style="font-size: 15pt;">
                         V-Tutor might be just what you're looking for! This video shows what V-Tutor is and how it will help you to enhance your learning experience
@@ -439,15 +445,6 @@
                     </div>
                     <!-- end of card -->
 
-                    <!-- Card -->
-                    <div class="card">
-                        <img class="card-image" src="images/services-icon-3.svg" alt="alternative">
-                        <div class="card-body">
-                            <h4 class="card-title">Action Plan</h4>
-                            <p>With all the information in place you will be presented with an action plan that your company needs to follow</p>
-                        </div>
-                    </div>
-                    <!-- end of card -->
                     
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
@@ -1277,10 +1274,14 @@
     <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
     <script src="js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
     <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
     <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
     <script src="js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
     <script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
     <script src="js/scripts.js"></script> <!-- Custom scripts -->
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

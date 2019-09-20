@@ -27,6 +27,7 @@ Table Of Contents:
 18. Back To Top Button
 19. Extra Pages
 20. Media Queries
+21. [ Animated Divs ]
 ******************************************/
 
 /*****************************************
@@ -1264,7 +1265,7 @@ input[type='checkbox'] {
 .slider-2 {
 	padding-top: 7.5rem;
 	padding-bottom: 7rem;
-	background: url('../images/testimonials-background.jpg') center center no-repeat;
+	background: url('../images/new-testimonials-background.png') center center no-repeat;
 	background-size: cover; 
 }
 
@@ -2182,3 +2183,24 @@ a:hover.back-to-top {
 	/* end of extra pages */
 }
 /* end of min-width width 1200px */
+
+/*****************************/
+/*   21. [ Animated Divs ]   */
+/*****************************/	
+
+.body {
+	scroll-snap-type: y mandatory;
+}
+
+.full-height-display-table {
+	scroll-snap-align: start;
+	height: 70%;
+	display: table;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.table-cell-center-vertical {
+	display: table-cell;
+	vertical-align: middle
+}
