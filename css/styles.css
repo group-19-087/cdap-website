@@ -838,6 +838,8 @@ input[type='checkbox'] {
 
 .cards-1 .card-body {
 	padding: 0;
+	height: 160px;
+	/* width: 208px; */
 }
 
 
@@ -1889,6 +1891,12 @@ a:hover.back-to-top {
 
 	/* Services */
 	.cards-1 .card {
+		display: inline-block;
+		max-width: 17.125rem;
+		vertical-align: top;
+	}
+
+	.cards-1 .card-2 {
 		display: inline-block;
 		max-width: 17.125rem;
 		vertical-align: top;
