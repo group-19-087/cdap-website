@@ -27,6 +27,7 @@ Table Of Contents:
 18. Back To Top Button
 19. Extra Pages
 20. Media Queries
+21. [ Animated Divs ]
 ******************************************/
 
 /*****************************************
@@ -837,6 +838,8 @@ input[type='checkbox'] {
 
 .cards-1 .card-body {
 	padding: 0;
+	height: 160px;
+	/* width: 208px; */
 }
 
 
@@ -1649,7 +1652,7 @@ a:hover.back-to-top {
 
 	/* Header */
 	.header .header-content {
-		padding-top: 10.5rem;
+		/* padding-top: 10.5rem; */
 	}
 
 	.header h1 {
@@ -1875,7 +1878,7 @@ a:hover.back-to-top {
 	}
 
 	.header .header-content {
-		padding-top: 11.5rem;
+		/* padding-top: 11.5rem; */
 		text-align: left;
 	}
 
@@ -1888,6 +1891,12 @@ a:hover.back-to-top {
 
 	/* Services */
 	.cards-1 .card {
+		display: inline-block;
+		max-width: 17.125rem;
+		vertical-align: top;
+	}
+
+	.cards-1 .card-2 {
 		display: inline-block;
 		max-width: 17.125rem;
 		vertical-align: top;
@@ -2047,7 +2056,7 @@ a:hover.back-to-top {
 
 	/* Header */
 	.header .header-content {
-		padding-top: 12.5rem;
+		/* padding-top: 12.5rem; */
 	}
 
 	.header .text-container {
@@ -2196,3 +2205,24 @@ a:hover.back-to-top {
 	/* end of extra pages */
 }
 /* end of min-width width 1200px */
+
+/*****************************/
+/*   21. [ Animated Divs ]   */
+/*****************************/	
+
+.body {
+	scroll-snap-type: y mandatory;
+}
+
+.full-height-display-table {
+	scroll-snap-align: start;
+	height: 70%;
+	display: table;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.table-cell-center-vertical {
+	display: table-cell;
+	vertical-align: middle
+}
