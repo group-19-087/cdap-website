@@ -148,7 +148,7 @@
         <div class="header-content">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 align-top">
                         <div class="text-container">
                             <h1><span class="turquoise">V-Tutor</span> A Platform for Improving Searchability and
                                 Interactivity of Recorded Lectures</h1>
@@ -239,7 +239,7 @@
                         <div class="col-lg-6">
                             <div class="text-container">
                                 <h2>Literature Survey</h2>
-                                <p>Before implementing our platform a survey on existing literature was conducted relevant to the main functiionalities of V-Tutor. We focused on mainly four areas as follows :</p>
+                                <p class="text-justify">Before implementing our platform a survey on existing literature was conducted relevant to the main functiionalities of V-Tutor. We focused on mainly four areas as follows :</p>
                                 <ul class="list-unstyled li-space-lg">
                                     <li class="media">
                                         <i class="fas fa-square"></i>
@@ -275,7 +275,7 @@
                     <div class="col-lg-6">
                         <div class="text-container">
                             <h2>Research Gap</h2>
-                            <p>Even though there are several products already available with similar objectives, they
+                            <p class="text-justify">Even though there are several products already available with similar objectives, they
                                 mostly focus on the use of manual processes that involve human intervention to make the
                                 content more interactive and increase the searchability. Our proposed solution aims to
                                 reduce the amount of human interaction needed for this process by introducing a platform
@@ -353,7 +353,7 @@
                     </div> <!-- end of col -->
                     <div class="col-lg-6">
                         <h2>Research Objectives</h2>
-                        <p>Based on the points identified in the research problem, The V-Tutor team came up with a 
+                        <p class="text-justify">Based on the points identified in the research problem, The V-Tutor team came up with a 
                             list of objectives for the system. The system will...</p>
                         <ul class="list-unstyled li-space-lg" style="text-align: start;">
                             <li class="media">
@@ -394,8 +394,18 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h2>Methodology</h2>
-                    <p class="p-heading p-large" style="margin-bottom: 0;">We serve small and medium sized companies in all tech related
-                        industries with high quality growth services which are presented below</p>
+                    <p  class="p-heading p-large text-justify">
+                        The V-Tutor system consists of an AngularJs web application as the frontend and a nodejs 
+                        application as the backend hosted on Amazon EC2 (Elastic Compute Cloud) servers.  
+                        The actual processing of the lecture videos which includes topic segmentation, slide matching, 
+                        code matching and question generation is performed out in parallel by the backend and the 
+                        resulting metadata is stored in a mongoDB instance on MongoDB Atlas servers. 
+                        The uploaded videos are stored on Amazon S3 (Simple Storage Service). This allows the
+                        rapid retrieval of metdata when serving the web application. 
+                    </p>
+                    <p style="margin-bottom: 0;" class="p-heading p-large text-justify">
+                        Links to the methodology of each of the individual research areas can be found directly below the diagram  
+                    </p>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
             <div class="row">
