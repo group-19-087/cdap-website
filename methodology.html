@@ -150,6 +150,9 @@
             <div class="col-lg-10 offset-lg-1">
                 <div class="text-container">
                     <h3>Code Matching </h3>
+                    <img class="img-fluid" src="images/methodology/code-matching.png">
+                    <br>
+                    <br>
                     <p>Live coding lectures, often seen in the field of Information Technology, usually feature a screen
                         capture in which the instructor types code into a text editor while narrating. The searchability
                         of such a video would be greatly improved if the student is able to use the source code
@@ -176,6 +179,9 @@
 
                 <div class="text-container">
                     <h3>Topic Segmentation </h3>
+                    <img class="img-fluid" src="images/methodology/topics-segmentation.png">
+                    <br>
+                    <br>
                     <p>We use a liguistic approach based on video transcripts for automatic video segmentation into
                         topic units.Our approach consists of two main parts: Topic modelling and text segmentation based
                         on the topic model. In our system topic modelling is achieved through a state-of-art algorithm
@@ -197,6 +203,9 @@
 
                 <div class="text-container">
                     <h3>Automatic Question Generation</h3>
+                    <img class="img-fluid" src="images/methodology/questions-generation.png">
+                    <br>
+                    <br>
                     <p>Automatic question generation is used as a feature to increase the interactivity of video lectures
                         as well as allowing learners to evaluate their knowledge on learning outcomes of the lecture.
                         The main of automating the question generation process is to increase the efficiency of lecturers
@@ -224,7 +233,10 @@
 
                 <div class="text-container">
                     <h3>Slide Matching</h3>
-                    <p>This component matches the lecture video with the lecture slides when the slides are available. Once the user selects
+                    <img class="img-fluid" src="images/methodology/slides-matching.png">
+                    <br>
+                    <br>
+                    <p>This component matches the lecture video with the slides when the slides are available. Once the user selects
                         a slide from the slide deck displayed, the platform will automatically take the user to the
                         point of time in the lecture video, where the selected slide is being discussed.</p>
                     <p>Below are the steps that the platform mainly performs in order to provide the above discussed functionality. </p>
@@ -237,11 +249,14 @@
                     <p><span style="font-weight: bold">Slide Matching:</span> As a result of the slide comparison carried out in the previous step, the algorithm
                         chooses the first frame having less than 1% of difference with the compared slide and recognizes
                         it as the first occurrence of the selected slide in the lecture video.</p>
-                    <p>As the final step, the first frame with the least amount of differences is identified using the algorithm and the platform
-                        automatically navigates the lecture video to the point of time where that frame occurred with the aid of the naming convention
-                        used when extracting frames using ffmpeg in the first step. </p>
+                    <p>As the final step, after identifying the first frame with a significant amount of similarity using the
+                        algorithm, the platform automatically navigates the lecture video to the point of time where that
+                        frame occurred with the aid of the naming convention used when extracting frames using ffmpeg in
+                        the first step. </p>
                 </div> <!-- end of text-container -->
+                <a class="btn-outline-reg back" href="index.html">BACK</a>
             </div>
+
         </div> <!-- end of row -->
     </div> <!-- end of container -->
 </div> <!-- end of ex-basic -->
