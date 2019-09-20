@@ -45,6 +45,21 @@ Colors:
 /******************************/
 /*     01. General Styles     */
 /******************************/
+.blue-link {
+	color: #00bfd8;
+	text-decoration: none;
+}
+
+.blue-link:hover {
+	color: #0099ad;
+	text-decoration: none;
+}
+
+.blue-link:active {
+	color: #0099ad;
+	text-decoration: none;
+}
+
 body,
 html {
     width: 100%;

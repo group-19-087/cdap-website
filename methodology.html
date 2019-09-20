@@ -150,31 +150,38 @@
             <div class="col-lg-10 offset-lg-1">
                 <div class="text-container">
                     <h3>Code Matching </h3>
+                    <img class="img-fluid" src="images/methodology/code-matching.png">
+                    <br>
+                    <br>
                     <p>Live coding lectures, often seen in the field of Information Technology, usually feature a screen
                         capture in which the instructor types code into a text editor while narrating. The searchability
                         of such a video would be greatly improved if the student is able to use the source code
                         discussed within the lecture as an index to pinpoint the time at which each line of code is
                         discussed in the video. </p>
                     <p>The following steps illustrate how the system carries out code matching.</p>
-                    <p><span style="font-weight: bold">Frame extraction:</span> The video is sampled at a rate of 1 frame per second using the FFmpeg6 open
-                        source library to create a set of images I. The sampling rate is set as such so that the number
+                    <p><span style="font-weight: bold">Frame extraction:</span> The video is sampled at a rate of 1 frame per second using the <i>FFmpeg</i> open
+                        source library to create a set of images <i>I</i>. The sampling rate is set as such so that the number
                         of duplicate frames is reduced. The set I is further narrowed down by performing a standard
                         pixel-wise comparison between consecutive frames and removing those with high similarity.</p>
-                    <p><span style="font-weight: bold">Text extraction:</span> For each image i ∈ I , text is extracted using the Optical Character Recognition
-                        capabilities of TESSERACT-OCR7 and stored in a set of text files T which maintains the
+                    <p><span style="font-weight: bold">Text extraction:</span> For each image <i>i ∈ I</i> , text is extracted using <i>TESSERACT-OCR</i> and stored in a set of text files T which maintains the
                         chronological ordering of each frame. The filename of each file is the timestamp of the frame
                         from which it was extracted. This is beneficial for later stages of the algorithm.</p>
-                    <p><span style="font-weight: bold">Source code matching:</span> The algorithm in Figure 1 demonstrates the source code matching process.
-                        The gestalt() function utilizes an algorithm based on Ratcliff and Obershelp’s
-                        ‘gestalt pattern matching’ algorithm [15]. This function finds the longest contiguous matching
-                        subsequence between two hashable strings and returns a ratio of similarity between the sequences. </p>
-                    <p>The efficiency of the algorithm is greatly improved by leveraging the VGG16 network [16] to
+                    <p><span style="font-weight: bold">Source code matching:</span> Source code matching is carried out by 
+                        an algorithm which is based on Ratcliff and Obershelp’s <a class="turquoise" href="https://xlinux.nist.gov/dads/HTML/ratcliffObershelp.html">
+                        ‘gestalt pattern matching’ algorithm</a>. This function finds the longest contiguous matching
+                        subsequence between two hashable strings and returns a ratio of similarity between the sequences. The algorithm compares
+                        every frame which has visible code in it with each line in the uploaded source code file to find the closest match. 
+                    </p>
+                    <p>The efficiency of the algorithm is greatly improved by leveraging the VGG16 network to
                         classify frames as those “containing code”. Thus, effectively reducing the number of iterations
                         required to match each line of code. </p>
                 </div> <!-- end of text-container -->
 
                 <div class="text-container">
                     <h3>Topic Segmentation </h3>
+                    <img class="img-fluid" src="images/methodology/topics-segmentation.png">
+                    <br>
+                    <br>
                     <p>We use a liguistic approach based on video transcripts for automatic video segmentation into
                         topic units.Our approach consists of two main parts: Topic modelling and text segmentation based
                         on the topic model. In our system topic modelling is achieved through a state-of-art algorithm
@@ -196,6 +203,9 @@
 
                 <div class="text-container">
                     <h3>Automatic Question Generation</h3>
+                    <img class="img-fluid" src="images/methodology/questions-generation.png">
+                    <br>
+                    <br>
                     <p>Automatic question generation is used as a feature to increase the interactivity of video lectures
                         as well as allowing learners to evaluate their knowledge on learning outcomes of the lecture.
                         The main of automating the question generation process is to increase the efficiency of lecturers
@@ -203,7 +213,7 @@
                         components as mentioned below.</p>
                     <p><span style="font-weight: bold">Extracting Input Text:</span> Question generation process is based on raw text from sentences or paragraphs
                         with factual statements and the work carried out by Michael Heilman and Noah A. Smith on
-                        Question Generation via Overgenerating Transformations and Ranking [21]. For this process factual
+                        Question Generation via Overgenerating Transformations and Ranking. For this process factual
                         statements need to be collected for the given lecture video. Use of transcript of lecture videos
                         is not a feasible option as in-class lectures tend to carry out more noise and in a verbal manner
                         that content and facts are scattered throughout the lecture. To address this issue, we identify
@@ -223,6 +233,9 @@
 
                 <div class="text-container">
                     <h3>Slide Matching</h3>
+                    <img class="img-fluid" src="images/methodology/slides-matching.png">
+                    <br>
+                    <br>
                     <p>This component is similar in functionality to the code matching component. Once the user selects
                         a slide from the slide deck displayed, the platform will automatically take the user to the
                         point of time in the lecture video, where the selected slide is being discussed.</p>
@@ -241,7 +254,9 @@
                         frame occurred with the aid of the naming convention used when extracting frames using ffmpeg in
                         the first step. </p>
                 </div> <!-- end of text-container -->
+                <a class="btn-outline-reg back" href="index.html">BACK</a>
             </div>
+
         </div> <!-- end of row -->
     </div> <!-- end of container -->
 </div> <!-- end of ex-basic -->
