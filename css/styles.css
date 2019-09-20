@@ -27,6 +27,7 @@ Table Of Contents:
 18. Back To Top Button
 19. Extra Pages
 20. Media Queries
+21. [ Animated Divs ]
 ******************************************/
 
 /*****************************************
@@ -2196,3 +2197,24 @@ a:hover.back-to-top {
 	/* end of extra pages */
 }
 /* end of min-width width 1200px */
+
+/*****************************/
+/*   21. [ Animated Divs ]   */
+/*****************************/	
+
+.body {
+	scroll-snap-type: y mandatory;
+}
+
+.full-height-display-table {
+	scroll-snap-align: start;
+	height: 70%;
+	display: table;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.table-cell-center-vertical {
+	display: table-cell;
+	vertical-align: middle
+}
