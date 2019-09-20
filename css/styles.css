@@ -838,6 +838,8 @@ input[type='checkbox'] {
 
 .cards-1 .card-body {
 	padding: 0;
+	height: 160px;
+	/* width: 208px; */
 }
 
 
